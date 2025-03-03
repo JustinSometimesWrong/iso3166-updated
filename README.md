@@ -32,5 +32,6 @@ public static readonly Country[] List = new[] {...};
 ```
 
 Last check against the official ISO 3166 as on https://www.iso.org/obp/ui/#search: 8th January 2020
+Updates since then applied from the official ISO 3166-1 website as of 3rd March 2025.
 
 License: MIT
