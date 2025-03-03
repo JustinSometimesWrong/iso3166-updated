@@ -3,20 +3,20 @@
     <TargetFrameworks>netstandard1.0;netstandard2.0;net6.0;net8.0</TargetFrameworks>
     <AssemblyTitle>ISO 3166-1 Country codes</AssemblyTitle>
     <Title>ISO 3166-1 Country list</Title>
-    <Authors>Jørn Schou-Rode</Authors>
+    <Authors>Jørn Schou-Rode, Justin Wright</Authors>
     <Description>
 ISO 3166-1 is part of the ISO 3166 standard published by the International Organization for Standardization (ISO), and defines codes for the names of countries, dependent territories, and special areas of geographical interest.
 This package provides a list of countries including their official English name as well as their ISO 3166 defined two-letter, three-letter and three-digit country codes. The list is accessible for any .NET language via the static field ISO3166.Country.List.
-Last check against the official ISO 3166 as on https://www.iso.org/obp/ui/#search: 8th January 2020.
+Last check against the official ISO 3166 as on https://www.iso.org/obp/ui/#search: 8th January 2020. Updates since then applied from the official ISO 3166-1 website as of 3rd March 2025.
     </Description>
     <PackageReleaseNotes>
-See https://github.com/schourode/iso3166/blob/master/CHANGELOG.md
+        https://github.com/JustinSometimesWrong/iso3166/blob/master/CHANGELOG.md
     </PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/schourode/iso3166</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/JustinSometimesWrong/iso3166</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>iso3166 country</PackageTags>
-    <RepositoryUrl>https://github.com/schourode/iso3166.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/JustinSometimesWrong/iso3166.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <AssemblyDescription>Codes for the representation of names of countries.</AssemblyDescription>
     <Version>1.0.5</Version>
