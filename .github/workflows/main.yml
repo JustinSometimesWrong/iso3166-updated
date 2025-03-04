@@ -57,7 +57,7 @@ jobs:
         name: nugetPackage
         path: nugetPackage
     - name: Prep packages
-      run: dotnet nuget add source --username ${{ vars.USERNAME }} --password ${{ secrets.NUGET_PACKAGE_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ vars.USERNAME }}/index.json"
+      run: dotnet nuget add source --username ${{ vars.USERNAME }} --password ${{ secrets.NUGET_API_KEY  }} --name github "https://nuget.pkg.github.com/${{ vars.USERNAME }}/index.json"
     - name: Push package to GitHub packages 
       if: needs.build.outputs.CommitsSinceVersionSource > 0 #Only release if there has been a commit/version change  
       run: dotnet nuget push nugetPackage/*.nupkg --api-key ${{ secrets.NUGET_PACKAGE_TOKEN }} --source "github"
@@ -70,4 +70,4 @@ jobs:
         tag: ${{ needs.build.outputs.Version }}
         name: Release ${{ needs.build.outputs.Version }}
         artifacts: "nugetPackage/*"
-        token: ${{ secrets.NUGET_PACKAGE_TOKEN }}
+        token: ${{ secrets.NUGET_API_KEY }}
